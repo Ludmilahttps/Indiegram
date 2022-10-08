@@ -1,0 +1,23 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Inicio TOP BAR*/
+.top-bar
+{
+    position: fixed;
+    background-color: red;
+    height: 54px;
+    width: 100%;
+}
+
+.logo
+{
+    display: flex;
+    margin: auto;
+    padding: 50px;
+    
+}
+
+/*Final TOP BAR*/
