@@ -102,6 +102,10 @@ body
         margin: 5px;
         border-radius: 100px;
     }
+    .forward ion-icon
+    {
+        display:none;
+    }
     /*Final STORYS*/
 
     /*Inicio POSTS*/
@@ -271,6 +275,24 @@ body
         border: 1px solid #dbdbdb;
     }
       
+    .forward
+    {
+        display: flex;
+        position: absolute;
+        right: 8px;
+        cursor: pointer;
+    }
+
+    .forward ion-icon
+    {
+        display: flex;
+        height: 32px;
+        width: 32px;
+        fill: #ffffff;
+        border-color: #ffffff;
+        opacity: 0.98;
+        
+    }
         .line
         {
             border: 1px solid #dbdbdb; 
