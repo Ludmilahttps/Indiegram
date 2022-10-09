@@ -15,12 +15,18 @@ body
     height: 54px;
     width: 100%;
     margin-top: 0px;
-    padding: 14px;
+    padding: 5px;
     box-sizing: border-box;
     display:flex;
     align-items: center;
     border: 1px solid #dbdbdb;
     z-index: 2;
+}
+
+.top-bar 
+{
+    border-left: none;
+    border-right: none;
 }
 
 .logo-instagram
@@ -36,11 +42,6 @@ body
     cursor: pointer;
 }
 
-[name="logo-cam"]
-{
-    margin-left: 15px;
-}
-
 [name="compass-outline"], [name="heart-outline"],[name="person-outline"]
 {
     display: none;
@@ -53,6 +54,10 @@ body
 /*Final TOP BAR*/
 
 /*Inicio FEED*/
+.container
+{
+    width: 100%;
+}
 .feed
 {
     margin-top: 54px;
@@ -68,6 +73,7 @@ body
         align-items: center;
         overflow-x: hidden;
         overflow-y: hidden;
+        padding-left: 12px;
     }
 
     .story
@@ -94,6 +100,7 @@ body
         height: 56px;
         width: 56px;
         margin: 5px;
+        border-radius: 100px;
     }
     /*Final STORYS*/
 
@@ -102,7 +109,7 @@ body
     {
         display:flex;
         flex-direction: column;
-        margin-bottom: 10px
+        margin-bottom: 10px;
     }
 
         .up-post
@@ -119,6 +126,7 @@ body
             width: 32px;
             margin-top: 15px;
             margin-left: 17px;
+            border-radius: 100px;
         }
 
         .up-post p
@@ -154,7 +162,7 @@ body
             height: 76px;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             box-sizing: border-box;
         }
 
@@ -162,7 +170,6 @@ body
         {
             display: flex;
             margin-top: 12px;
-            margin-left: 17.75px;
             margin-bottom: 10px;
             box-sizing: border-box;
         }
@@ -171,6 +178,11 @@ body
             {
                 height: 17.88px;
                 cursor: pointer;
+            }
+            [name="heart-outline"]
+            {
+                display: flex;
+                margin-left: 17.81px;
             }
             [name="chatbubble-outline"]
             {
@@ -223,15 +235,12 @@ body
     border: 1px solid #dbdbdb;
     height: 54px;
     width: 100%;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
     padding: 0 14px;
     box-sizing: border-box;
     display:flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 5;
+    z-index: 2;
 }
 
 .bottom-bar ion-icon 
@@ -243,15 +252,14 @@ body
 /*Final BOTTOM-BAR*/
 
 /*responsividade*/
-/*    
-.img-post img
-    height: 612px;
-    width: 612px;
-    im
-*/
 /* Desktop sem sidebar */
 @media all and (min-width: 614px) 
 {
+    .container
+    {
+        display: flex;
+        justify-content: center;
+    }
     .feed
     {
         width: 614px;  
@@ -279,7 +287,9 @@ body
         {
             width: 40px;
             cursor: pointer;
+    
         }
+        
         .searchbar
         {
             width: 100%;
@@ -300,7 +310,7 @@ body
         {
             text-align: center;
         }
-        [name="logo-cam"]
+        .top-bar [name="logo-cam"]
         {
             margin-left: 15px;
         }
@@ -308,17 +318,17 @@ body
         {
             margin-right: 20px;
         }
-        [name="compass-outline"]
+        .top-bar [name="compass-outline"]
         {
             display: flex;
-            margin-right: 20px;
+            margin-right: 1px;
         } 
-        [name="heart-outline"]
+        .top-bar [name="heart-outline"]
         {
             display: flex;
             margin-right: 20px;
         }
-        [name="person-outline"]
+        .top-bar [name="person-outline"]
         {
             display: flex;
             margin-right: 5px;
