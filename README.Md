@@ -1,4 +1,4 @@
-This project is a responsive replica of the web version of Instagram, working with HTML and CSS. It has been carefully developed to be as close to the original layout as possible!
+This project is a responsive replica of the web version of Instagram, working with HTML and CSS. It has been carefully developed to be as close to the original layout as possible! Try it out now at https://instagram-com-virid.vercel.app/
 
 # About
 - Layout
