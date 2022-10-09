@@ -1,18 +1,25 @@
 body
 {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Inicio TOP BAR*/
 .top-bar
 {
-    /**position: fixed;*/
-    background-color: red;
+    background-color: white;
+    position: fixed;
     height: 54px;
     width: 100%;
-    padding-top: 14px;
+    margin-top: 0px;
+    padding: 14px 0px;
     box-sizing: border-box;
-    
+    display:flex;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    z-index: 2;
 }
 
 .logo-instagram
@@ -21,12 +28,215 @@ body
     margin: auto;
 }
 
-.logo-cam
+.top-bar ion-icon 
 {
-    height: 19.25px;
-    width:19.25px;
-    display: flex;
-    margin: right;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
 }
 
+[name="logo-cam"]
+{
+    padding-right: 15px;
+}
+
+[name="paper-plane-outline"]
+{
+    margin-left: 15px;
+}
 /*Final TOP BAR*/
+
+/*Inicio FEED*/
+.feed
+{
+    margin-top: 54px;
+    width: 100%;
+}
+    /*Inicio STORYS*/
+    .storys
+    {
+        height: 118px;
+        
+        position: relative;
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .story
+    {
+        height: 78px;
+        width: 66px;
+        text-align: center;
+        font-size:12px;
+        padding: 0 6px;
+    }
+
+    .img-story
+    {
+        background-image: url("icons/stories_background.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+    .img-story img
+    {
+        height: 56px;
+        width: 56px;
+        margin: 5px;
+    }
+    /*Final STORYS*/
+
+    /*Inicio POSTS*/
+    .posts
+    {
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 10px
+    }
+
+        .up-post
+        {
+            background-color: white;
+            height: 61px;
+            display: flex;
+            
+        }
+
+        .img-profile img
+        {
+            height: 32px;
+            width: 32px;
+            margin-top: 15px;
+            margin-left: 17px;
+        }
+
+        .up-post p
+        {
+            margin-top: 21px;
+            margin-left: 15px;
+        }
+
+        [name="ellipsis-horizontal"]
+        {
+            margin-top: 23px;
+            margin-left: auto;
+            margin-right: 16.5px;
+        }
+
+    .post
+    {
+        border: 1px solid #dbdbdb;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-post img
+    {
+        width:100%;
+        margin-bottom: -3px;
+    }
+
+        .down-post
+        {
+            background-color: white;
+            height: 76px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            box-sizing: border-box;
+        }
+
+        .icons-post
+        {
+            display: flex;
+            margin-top: 12px;
+            margin-left: 17.75px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+            .icons-post ion-icon 
+            {
+                height: 17.88px;
+                cursor: pointer;
+            }
+            [name="chatbubble-outline"]
+            {
+                margin-left: 17.81px;
+            }
+            [name="paper-plane-outline"]
+            {
+                margin-left: 18.12px;
+            }
+            [name="bookmark-outline"]
+            {
+                margin-left: auto;
+                margin-right: 17.63px;
+            }
+
+        .curtidas
+        {
+            display: flex;
+            margin-bottom: 14px;
+            margin-left: 17px;
+            box-sizing: border-box;
+        }
+
+        .curtidas p
+        {
+            margin-top: 3px
+        }
+
+        .img-like img
+        {
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
+        }
+
+    .middle
+    {
+        height: 60px;
+    }
+    /*Final POSTS*/
+/*Final FEED*/
+/*Inicio BOTTOM-BAR*/
+.bottom-bar
+{
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    height: 54px;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 14px;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.bottom-bar ion-icon 
+{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+/*Final BOTTOM-BAR*/
+
+/*responsividade*/
+/*    
+.img-post img
+    height: 612px;
+    width: 612px;
+    im
+*/
