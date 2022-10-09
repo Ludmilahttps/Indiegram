@@ -54,6 +54,16 @@ body
 /*Final TOP BAR*/
 
 /*Inicio FEED*/
+.posts p
+{
+    size: 14px;
+    font-weight: 300;
+}
+.posts b
+{
+    size: 14px;
+    font-weight: 500;
+}
 .container
 {
     width: 100%;
@@ -74,6 +84,7 @@ body
         overflow-x: hidden;
         overflow-y: hidden;
         padding-left: 12px;
+        border-radius: 3px;
     }
 
     .story
@@ -113,7 +124,8 @@ body
     {
         display:flex;
         flex-direction: column;
-        margin-bottom: 10px;
+        margin-bottom: 1px;
+        border-radius: 3px;
     }
 
         .up-post
@@ -133,7 +145,7 @@ body
             border-radius: 100px;
         }
 
-        .up-post p
+        .up-post b
         {
             margin-top: 21px;
             margin-left: 15px;
@@ -146,12 +158,13 @@ body
             margin-right: 16.5px;
         }
 
-    .post
+    .post, .post-final
     {
         border: 1px solid #dbdbdb;
         background-color: black;
         display: flex;
         flex-direction: column;
+        border-radius: 3px;
     }
 
     .img-post img
@@ -183,7 +196,7 @@ body
                 height: 17.88px;
                 cursor: pointer;
             }
-            [name="heart-outline"]
+            .icons-post [name="heart-outline"]
             {
                 display: flex;
                 margin-left: 17.81px;
@@ -220,11 +233,19 @@ body
             height: 20px;
             width: 20px;
             margin-right: 5px;
+            border-radius: 100%;
         }
 
     .middle
     {
         height: 60px;
+    }
+    .post-final
+    {
+        height: 160px;
+        display:flex;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
     /*Final POSTS*/
 /*Final FEED*/
@@ -250,6 +271,10 @@ body
 }
 
 .bottom-bar [name="person-outline"]
+{
+    display: flex;
+}
+.bottom-bar [name="heart-outline"]
 {
     display: flex;
 }
@@ -349,12 +374,12 @@ body
         .top-bar [name="compass-outline"]
         {
             display: flex;
-            margin-right: 1px;
+            margin-right: 19px;
         } 
         .top-bar [name="heart-outline"]
         {
             display: flex;
-            margin-right: 20px;
+            margin-right: 19px;
         }
         .top-bar [name="person-outline"]
         {
@@ -398,6 +423,10 @@ body
     margin-top: 114px;
     margin-left: 29px;
    }
+   .sidebar img 
+   {
+    border-radius: 100%;
+   }
    .profile
    {
     display: flex;
@@ -413,6 +442,19 @@ body
    {
     display: flex;
     flex-direction: column;
+    margin-left: -40px;
+   }
+   .profile .info
+   {
+    margin-left: 0px;
+   }
+   .profile .info b
+   {
+    font-weight: 500;
+   }
+   .profile .info p
+   {
+    font-weight: 300;
    }
    .see-all
    {
