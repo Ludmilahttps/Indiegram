@@ -240,6 +240,8 @@ body
     height: 54px;
     width: 100%;
     padding: 0 14px;
+    bottom: 0;
+    position: fixed;
     box-sizing: border-box;
     display:flex;
     align-items: center;
@@ -247,6 +249,10 @@ body
     z-index: 2;
 }
 
+.bottom-bar [name="person-outline"]
+{
+    display: flex;
+}
 .bottom-bar ion-icon 
 {
     height: 20px;
